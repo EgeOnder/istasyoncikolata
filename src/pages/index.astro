@@ -1,0 +1,122 @@
+---
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.jsx';
+import Layout from '../layouts/Layout.astro';
+
+const selected = [
+	{
+		// image: 'header.png',
+		title: 'Serpme Kahvaltı',
+		description:
+			'Peynir ve zeytin çeşitleri, tereyağı, bal, reçel, sigara böreği, domates, salatalık, mevsim yeşillikleri, haşlanmış yumurta ve sınırsız çay.',
+		path: '/menu/kahvaltilar/serpme-kahvalti',
+	},
+	{
+		// image: 'header.png',
+		title: 'Hamburger Menü',
+		description: 'Hamburger, patates, kola veya ayran.',
+		path: '/menu/burgerler/hamburger-menu',
+	},
+	{
+		// image: 'header.png',
+		title: 'Kahvaltı Tabağı',
+		description:
+			'Peynir ve zeytin çeşitleri, tereyağı, bal, reçel, sigara böreği, domates, salatalık, mevsim yeşillikleri, sahanda veya haşlanmış yumurta, patates kızartması, sucuk ve sınırsız çay.',
+		path: '/menu/kahvaltilar/kahvalti-tabagi',
+	},
+	{
+		// image: 'header.png',
+		title: 'Margarita Pizza',
+		description: 'Domates sos, parmesan, fesleğen, mozarella.',
+		path: '/menu/pizzalar/margarita',
+	},
+];
+---
+
+<Layout title='Chocolate Station'>
+	<Navbar off={false} />
+
+	<div class='header'>
+		<div class='header-container'>
+			<div class='header-left'>
+				<h1 class='header-title'>
+					Sade Yaşama İlham Veren
+					<span class='highlight'> Mutfak</span>{' '}
+					Anlayışı.
+				</h1>
+				<p class='header-subtitle'>
+					Taze ve güncel menümüze ulaşmak için tıklayın.
+				</p>
+				<div class='header-buttons'>
+					<a class='btn' href='/menu'> MENÜYÜ İNCELE</a>
+				</div>
+			</div>
+
+			<div class='header-right hidden-on-mobile'>
+				<img src='/images/header.png' alt='header' />
+			</div>
+		</div>
+	</div>
+
+	<div class='special'>
+		<div class='special-title'>
+			<h2>Seçtiklerimiz</h2>
+		</div>
+		<div class='special-container'>
+			{
+				selected.map((food) => (
+					<div class='special-cart'>
+						{/* <img
+								src={`${process.env.REACT_APP_API}/public/images/${food.image}`}
+								alt="cart"
+								class="cart-img"
+							/> */}
+						<h4 class='cart-title' style={{ marginTop: '2rem' }}>
+							{food.title}
+						</h4>
+						<p class='cart-subtitle'>{food.description}</p>
+						<a
+							class='btn'
+							style={{ marginBottom: '2rem' }}
+							href={food.path}
+						>
+							Daha Fazla
+						</a>
+					</div>
+				))
+			}
+		</div>
+	</div>
+
+	{
+		/* <div class="comments">
+				<div class="comments-wrapper">
+					<h2 class="comments-title">Müşteri Yorumları</h2>
+					<div class="comments-cards">
+						{comments.map((comment) => (
+							<div
+								class="comments-card-item"
+								key={comment.name}
+							>
+								<div class="comments-card-img-wrapper">
+									<img
+										src={`${process.env.REACT_APP_API}/public/images/${comment.image}`}
+										class="comments-card-img"
+									/>
+								</div>
+
+								<span class="comments-card-comment">
+									&quot;{comment.comment}&quot;
+								</span>
+								<span class="comments-card-name">
+									- {comment.name}
+								</span>
+							</div>
+						))}
+					</div>
+				</div>
+			</div> */
+	}
+
+	<Footer />
+</Layout>

@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title='Chocolate Station - İletişim'>
+	<Navbar off />
+	<div class='contact'>
+		<div class='contact-container'>
+			<div class='contact-left'>
+				<h1 class='contact-title'>İletişim</h1>
+				<form>
+					<div class='form-input-flex'>
+						<input
+							type='text'
+							placeholder='Ad'
+							class='form-input'
+						/>
+						<input
+							type='text'
+							placeholder='Soyad'
+							class='form-input'
+						/>
+					</div>
+					<div class='form-input-flex'>
+						<input
+							type='email'
+							placeholder='E-posta'
+							class='form-input'
+						/>
+					</div>
+					<div class='form-input-flex'>
+						<textarea
+							placeholder='Mesajınız'
+							class='form-textarea'
+							rows='4'></textarea>
+					</div>
+					<button class='btn' type='submit'> Gönder</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<Footer />
