@@ -24,5 +24,3 @@ jobs:
               run: yarn install
             - name: Build the project
               run: yarn build
-            - name: Start the project
-              run: yarn start
