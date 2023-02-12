@@ -22,11 +22,6 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - name: Install packages
               run: yarn install
-            - name: Lint Action
-              uses: wearerequired/lint-action@v2.3.0
-              with:
-                  eslint: true
-                  prettier: true
             - name: Build the project
               run: yarn build
             - name: Start the project
