@@ -12,17 +12,18 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
-		"@astrojs/react": "^1.2.2",
-		"@types/react": "^18.0.21",
-		"@types/react-dom": "^18.0.6",
-		"astro": "^1.6.11",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0"
+		"@astrojs/react": "^2.1.1",
+		"astro": "^2.2.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@types/node": "^18.11.9",
-		"@typescript-eslint/eslint-plugin": "^5.44.0",
-		"@typescript-eslint/parser": "^5.44.0",
-		"eslint": "^8.28.0"
+		"@types/node": "^18.15.11",
+		"@types/react": "^18.0.34",
+		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.58.0",
+		"@typescript-eslint/parser": "^5.58.0",
+		"eslint": "^8.38.0",
+		"prettier": "^2.8.7"
 	}
 }
