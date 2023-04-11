@@ -2,34 +2,30 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const Navbar = ({ off }) => {
-	const [navbarActive, setNavbarActive] = useState();
+	const [navbarActive, setNavbarActive] = useState(false);
 	const [hamburger, setHamburger] = useState(false);
 
 	const navRef = useRef();
 	navRef.current = navbarActive;
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const show = window.scrollY > 100;
+		if (window) {
+			const handleScroll = () => {
+				const show = window.scrollY > 100;
 
-			if (show) setNavbarActive(true);
-			else setNavbarActive(false);
-		};
+				if (show) setNavbarActive(true);
+				else setNavbarActive(false);
+			};
 
-		document.addEventListener('scroll', handleScroll);
+			document.addEventListener('scroll', handleScroll);
 
-		return () => document.removeEventListener('scroll', handleScroll);
-	}, []);
+			return () => document.removeEventListener('scroll', handleScroll);
+		}
+	});
 
 	const hamburgerToggle = () => {
-		if (hamburger) {
-			const show = window.scrollY > 100;
-			setHamburger(false);
-			if (!show) setNavbarActive(false);
-		} else {
-			setHamburger(true);
-			setNavbarActive(true);
-		}
+		setHamburger((oldHamburger) => !oldHamburger);
+		console.log('test');
 	};
 
 	return (
@@ -60,13 +56,6 @@ const Navbar = ({ off }) => {
 						>
 							MENÜ
 						</a>
-						{/* <button
-								className="btn-text"
-								style={{ marginRight: 24 }}
-								onClick={() => history.push('/galeri')}
-							>
-								GALERİ
-							</button> */}
 						<a
 							className='btn-text'
 							style={{ marginRight: 16 }}
