@@ -1,34 +1,32 @@
 # istasyoncikolata
 
-[![Build][build-shield]][build-url]
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![MIT License][license-shield]][license-url]
+<p align="center">
+  <img src="./public/logo/logowithtextwhite.svg" height="100" alt="Chocolate Station logo" />
+</p>
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About the project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ol>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-      </ol>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#maintainers">Maintainers</a></li>
-  </ol>
-</details>
-
-## About the project
+<p align="center">
+    <a href="https://github.com/EgeOnder/istasyoncikolata/actions">
+      <img src="https://img.shields.io/github/actions/workflow/status/EgeOnder/istasyoncikolata/main.yml?style=for-the-badge" alt="build status">
+    </a>
+    <a href="https://github.com/EgeOnder/istasyoncikolata/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/EgeOnder/istasyoncikolata.svg?style=for-the-badge" alt="contributors">
+    </a>
+    <a href="https://github.com/EgeOnder/istasyoncikolata/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/EgeOnder/istasyoncikolata?style=for-the-badge" alt="contributors">
+    </a>
+</p>
 
 istasyoncikolata is a website for a restaurant/café built with Astro.
+
+## Table of contents
+
+-   [Getting started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+    -   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Maintainers](#maintainers)
 
 ## Getting started
 
@@ -96,21 +94,10 @@ Contributions to the project is highly appreciated. If you have any suggestions/
 
 ## License
 
-This project is licensed under `MIT License` if you want to see more, please check [LICENSE][license-url] for more information.
+This project is licensed under `MIT License` if you want to see more, please check [LICENSE](LICENSE) for more information.
 
 ## Maintainers
 
-| Name      | E-Mail                                     | Twitter                                       | Role      |
-| --------- | ------------------------------------------ | --------------------------------------------- | --------- |
-| Ege Onder | 40398628+EgeOnder@users.noreply.github.com | [@EgeOnder23](https://twitter.com/EgeOnder23) | developer |
-
-[build-shield]: https://img.shields.io/github/actions/workflow/status/EgeOnder/istasyoncikolata/main.yml?style=for-the-badge
-[build-url]: https://github.com/EgeOnder/istasyoncikolata/actions
-[contributors-shield]: https://img.shields.io/github/contributors/EgeOnder/istasyoncikolata.svg?style=for-the-badge
-[contributors-url]: https://github.com/EgeOnder/istasyoncikolata/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EgeOnder/istasyoncikolata.svg?style=for-the-badge
-[forks-url]: https://github.com/EgeOnder/istasyoncikolata/network/members
-[stars-shield]: https://img.shields.io/github/stars/EgeOnder/istasyoncikolata.svg?style=for-the-badge
-[stars-url]: https://github.com/EgeOnder/istasyoncikolata/stargazers
-[license-shield]: https://img.shields.io/github/license/EgeOnder/istasyoncikolata?style=for-the-badge
-[license-url]: https://github.com/EgeOnder/istasyoncikolata/blob/main/LICENSE
+| Name      | E-Mail                                     | Twitter                                       |
+| --------- | ------------------------------------------ | --------------------------------------------- |
+| Ege Onder | 40398628+EgeOnder@users.noreply.github.com | [@EgeOnder23](https://twitter.com/EgeOnder23) |
