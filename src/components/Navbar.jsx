@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const Navbar = ({ off }) => {
-	const [navbarActive, setNavbarActive] = useState(false);
+	const [navbarActive, setNavbarActive] = useState();
 	const [hamburger, setHamburger] = useState(false);
 
 	const navRef = useRef();
@@ -24,8 +24,14 @@ const Navbar = ({ off }) => {
 	});
 
 	const hamburgerToggle = () => {
-		setHamburger((oldHamburger) => !oldHamburger);
-		console.log('test');
+		if (hamburger) {
+			const show = window.scrollY > 100;
+			setHamburger(false);
+			if (!show) setNavbarActive(false);
+		} else {
+			setHamburger(true);
+			setNavbarActive(true);
+		}
 	};
 
 	return (
