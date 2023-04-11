@@ -9,21 +9,6 @@ body {
 	color: white;
 }
 
-.menu-edit {
-	position: fixed;
-	right: 3rem;
-	bottom: 3rem;
-	padding: 16px 24px 16px 24px;
-	cursor: pointer;
-	background: linear-gradient(
-		45deg,
-		rgba(63, 81, 181, 1) 0%,
-		rgba(109, 64, 180, 1) 100%
-	);
-	border-radius: 36px;
-	border: none;
-}
-
 .menu-old {
 	padding-top: 20vh;
 	padding-bottom: 5vh;
@@ -50,12 +35,6 @@ body {
 
 	.menu-old {
 		padding-top: 15vh;
-	}
-
-	.menu-edit {
-		right: 1rem;
-		bottom: 1rem;
-		padding: 12px 20px 12px 20px;
 	}
 }
 
@@ -88,34 +67,6 @@ body {
 		display: flex;
 	}
 }
-
-.loader-bg {
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.9);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.button-none {
-	background: transparent;
-	border: none;
-	margin-right: 1rem;
-	cursor: pointer;
-	transition: 0.3s;
-	padding: 1rem 0.5rem;
-	border-radius: 12px;
-}
-
-.button-none:hover {
-	background-color: #ccc;
-}
-
-.form-flex {
-	display: flex;
-}
-
 .container {
 	display: flex;
 	justify-content: center;
@@ -124,20 +75,7 @@ body {
 	flex-direction: column;
 }
 
-.paper {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	padding: 3rem 2rem;
-}
-
 @media screen and (max-width: 768px) {
-	.button-none {
-		margin-right: 0;
-	}
-
 	.hidden-on-mobile {
 		display: none;
 	}

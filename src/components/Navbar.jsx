@@ -9,17 +9,19 @@ const Navbar = ({ off }) => {
 	navRef.current = navbarActive;
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const show = window.scrollY > 100;
+		if (window) {
+			const handleScroll = () => {
+				const show = window.scrollY > 100;
 
-			if (show) setNavbarActive(true);
-			else setNavbarActive(false);
-		};
+				if (show) setNavbarActive(true);
+				else setNavbarActive(false);
+			};
 
-		document.addEventListener('scroll', handleScroll);
+			document.addEventListener('scroll', handleScroll);
 
-		return () => document.removeEventListener('scroll', handleScroll);
-	}, []);
+			return () => document.removeEventListener('scroll', handleScroll);
+		}
+	});
 
 	const hamburgerToggle = () => {
 		if (hamburger) {
@@ -60,13 +62,6 @@ const Navbar = ({ off }) => {
 						>
 							MENÜ
 						</a>
-						{/* <button
-								className="btn-text"
-								style={{ marginRight: 24 }}
-								onClick={() => history.push('/galeri')}
-							>
-								GALERİ
-							</button> */}
 						<a
 							className='btn-text'
 							style={{ marginRight: 16 }}
