@@ -16,7 +16,9 @@
     </a>
 </p>
 
-istasyoncikolata is a website for a restaurant/café built with Astro.
+<p align="center">
+    istasyoncikolata is a website for a restaurant/café built with Astro.
+</p>
 
 ## Table of contents
 
