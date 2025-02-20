@@ -1,7 +1,6 @@
 import { auth } from '@clerk/nextjs/server';
 import { neon } from '@neondatabase/serverless';
 import { createUploadthing, type FileRouter } from 'uploadthing/next';
-import { UploadThingError } from 'uploadthing/server';
 import { env } from '~/env';
 
 const f = createUploadthing();
@@ -20,7 +19,7 @@ export const ourFileRouter = {
 		.middleware(async ({ req }) => {
 			const user = await auth();
 
-			if (!user) throw new UploadThingError('Unauthorized');
+			if (!user) throw new Error('Unauthorized');
 
 			return { userId: user.userId };
 		})

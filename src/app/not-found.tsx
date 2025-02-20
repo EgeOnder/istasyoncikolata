@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Footer from '~/components/footer';
 import Navbar from '~/components/navbar';
 
@@ -6,15 +7,15 @@ export default function NotFound() {
 		<>
 			<Navbar off={false} />
 
-			<header className="header">
-				<div className="notfound-container">
+			<header className='header'>
+				<div className='notfound-container'>
 					<h1 style={{ marginBottom: '2rem' }}>
 						Aradığın sayfayı bulamadık!
 					</h1>
-					<a className="btn" href="/">
+					<Link className='btn' href='/'>
 						{' '}
 						Ana Sayfaya Dön
-					</a>
+					</Link>
 				</div>
 			</header>
 

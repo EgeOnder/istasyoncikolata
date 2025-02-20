@@ -44,7 +44,7 @@ const Navbar = ({ off }: NavbarProps) => {
 
 	return (
 		<nav
-			className="navbar"
+			className='navbar'
 			style={{
 				backgroundColor: off
 					? 'black'
@@ -53,33 +53,33 @@ const Navbar = ({ off }: NavbarProps) => {
 					: 'transparent',
 			}}
 		>
-			<div className="navbar-container">
-				<a href="/">
+			<div className='navbar-container'>
+				<Link href='/'>
 					<img
-						src="/logo/logowithtextwhite.svg"
-						alt="logo"
-						className="navbar-image"
+						src='/logo/logowithtextwhite.svg'
+						alt='logo'
+						className='navbar-image'
 					/>
-				</a>
-				<div className="navbar-buttons">
-					<div className="navbar-buttons hidden-on-mobile">
+				</Link>
+				<div className='navbar-buttons'>
+					<div className='navbar-buttons hidden-on-mobile'>
 						<Link
-							className="btn-text"
+							className='btn-text'
 							style={{ marginRight: 24 }}
-							href="/menu"
+							href='/menu'
 						>
 							MENÜ
 						</Link>
 						<Link
-							className="btn-text"
+							className='btn-text'
 							style={{ marginRight: 16 }}
-							href="/iletisim"
+							href='/iletisim'
 						>
 							İLETİŞİM
 						</Link>
 					</div>
 					<div
-						className="navbar-hamburger btn-icon"
+						className='navbar-hamburger btn-icon'
 						onClick={hamburgerToggle}
 					>
 						<Menu />
@@ -93,12 +93,12 @@ const Navbar = ({ off }: NavbarProps) => {
 						: 'hamburger-container'
 				}
 			>
-				<ul className="hamburger-list">
-					<Link href="menu">
-						<li className="hamburger-li">MENÜ</li>
+				<ul className='hamburger-list'>
+					<Link href='menu'>
+						<li className='hamburger-li'>MENÜ</li>
 					</Link>
-					<Link href="iletisim">
-						<li className="hamburger-li">İLETİŞİM</li>
+					<Link href='iletisim'>
+						<li className='hamburger-li'>İLETİŞİM</li>
 					</Link>
 				</ul>
 			</div>

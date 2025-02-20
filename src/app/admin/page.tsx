@@ -27,7 +27,7 @@ export default async function AdminMenu() {
 	for (let i = 0; i < menus.length; i++) {
 		const url = await getMenuImage(String(i + 1));
 
-		menuImages[i] = url;
+		if (url) menuImages[i] = url;
 	}
 
 	return (
