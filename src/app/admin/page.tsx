@@ -3,7 +3,7 @@ import Navbar from '~/components/navbar';
 import Upload from './upload';
 import { getMenuImage } from './actions';
 
-export const menus = [
+const menus = [
 	{
 		id: 1,
 	},
